@@ -7,6 +7,14 @@ These Terraform templates will provision a GKE cluster in GCP and deploy a nginx
 - Google Cloud Account
 - [Terraform](https://www.terraform.io/downloads.html)
 
+## Installing Terraform
+
+```shell
+$ wget https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
+$ unzip terraform_0.12.20_linux_amd64.zip
+$ sudo cp terraform /usr/bin
+```
+
 
 ## Getting project credentials
 In order to deploy your workload to Google Cloud, you need to set up a service account key, which Terraform will use to create and manage resources in your GCP project. Go to the [create service account key page](https://console.cloud.google.com/apis/credentials/serviceaccountkey). Select the default service account or create a new one, select JSON as the key type, and click Create.
